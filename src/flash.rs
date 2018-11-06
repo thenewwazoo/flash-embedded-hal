@@ -13,15 +13,13 @@ pub trait Read {
     fn read<WORD>(&self, addr: usize) -> Result<WORD, Self::Error>;
 }
 
-pub trait Write {
+pub trait WriteErase {
     type Error;
     type Status;
 
     fn status(&self) -> Result<Self::Status, Self::Error>;
 
     fn erase_page(&mut self, address: usize) -> Result<(), Self::Error>;
-
-    fn erase_all_pages(&mut self) -> Result<(), Self::Error>;
 
     fn program_word(&mut self, address: usize, value: u32) -> Result<(), Self::Error>;
 }

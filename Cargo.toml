@@ -1,6 +1,6 @@
 [package]
 name = "flash-embedded-hal"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Brandon Matthews <bmatthews@zipcar.com>"]
 description = "A set of experimental traits for NVM/Flash access"
 categories = ["embedded", "hardware-support", "no-std"]
