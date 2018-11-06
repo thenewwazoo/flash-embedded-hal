@@ -1,0 +1,12 @@
+[package]
+name = "flash-embedded-hal"
+version = "0.1.0"
+authors = ["Brandon Matthews <bmatthews@zipcar.com>"]
+description = "A set of experimental traits for NVM/Flash access"
+categories = ["embedded", "hardware-support", "no-std"]
+keywords = ["hal", "IO", "flash"]
+license = "0BSD"
+readme = "README.md"
+repository = "https://github.com/thenewwazoo/flash-embedded-hal"
+
+[dependencies]
