@@ -1,12 +1,5 @@
 //! Flash-related traits
 
-pub trait Latency {
-    type Latency;
-    type Error;
-
-    fn set_latency(&mut self, latency: Self::Latency) -> Result<(), Self::Error>;
-}
-
 pub trait Read {
     type Error;
 
